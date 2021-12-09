@@ -1,7 +1,7 @@
 # Niryo-One-Project
 
-#### Projet Niryo One
-#### ESIREM 4A program 
+#### Projet Niryo One (ESIREM 4A program)
+
 
 ## Introduction : 
 
@@ -25,3 +25,19 @@ Vocational training
 R&D laboratories 
 
 Its use is particularly adapted to study robotics and programming in the context of the industry 4.0.
+
+
+
+
+
+## Using guide 
+
+In order to know how to deal with the robot, it's necessary to know this buttons and I/O :
+
+![picture alt](http://via.placeholder.com/200x150 "Title is optional")
+
+
+Steps to start using the Robot with the software Niryo One Studio:
+* Connect the robot to a Power Supply, which came with, connect also the built if you want to use it.
+* Turn on the robot by the 
+
