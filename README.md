@@ -70,6 +70,10 @@ Its use is particularly adapted to study robotics and programming in the context
 cd Desktop/NiryoOneStudio-linux-x64/
 ./NiryoOneStudio
 ```
+Overview <br/> <br/>
+
+![4](https://user-images.githubusercontent.com/76461363/145490882-a907e2a8-97af-429b-b28a-c505c1289f08.PNG)
+
 
 * Once the software launched,on the right of the toolbar, you can see the current connection state: “Connected to” + IP
 address, or “Not connected”. Connect to the niryo. Just press the button **Connect to Niryo One**. <br/> <br/>
@@ -77,7 +81,42 @@ address, or “Not connected”. Connect to the niryo. Just press the button **C
 
 * Calibration : After the robot has been successfully launched (LED green or blue), and before you can give a
 move command to the robot, you will need to calibrate it. Also, if a Niryo Stepper motor was
-disconnected and reconnected, a calibration will be required.
+disconnected and reconnected, a calibration will be required. Chose **auto calibration**.
+* after a succes calibration, the robot mow is ready.
+
+#### Menu  <br/> <br/>
+
+![5](https://user-images.githubusercontent.com/76461363/145490932-dbeddba9-d75c-4457-bb79-e8ff08263183.PNG)
+
+
+#### launch a scratch code <br/>
+To launch an existing code:
+* go to the Niryo blocks panel in the left menu.<br/> <br/>
+
+![6](https://user-images.githubusercontent.com/76461363/145491338-f7ed2042-0932-4537-b12d-3fb3479df95d.PNG)
+
+  1. This is the workspace. Your whole program will be there.
+  2. Clicking on this icon will center the workspace on your blocks.
+  3. Workspace zoom control.
+  4. To delete a block, simply drag it and drop it onto the trash. You can also select it and press
+  the delete key on your keyboard.
+  5. Clear the current workspace.
+  6. Undo/Redo. You can also use CTRL + Z, and CTRL + MAJ + Z
+  7. Add a position block.
+  8. Play the sequence displayed on the workspace. Once the sequence is done (success or not),
+  you’ll get a notification on the bottom of the screen.
+  9.  Stop the current sequence execution.
+  10.   Import / Export Blocks.
+  11.   The “Niryo One” functions.
+
+* chose the button number 10 and then chose **Import Blocks from your computer (XML)**.
+* Then chose your file and press **Open** (Sorting file holding the name "pick_n _sort_depending_on_color")
+* Run the code by pressing the button play (8).
+* ***If there's a problem, ensure that the robot choose well the large gripper. Go to robot command panel in the left menu -> tool command: choose large gripper then press SELECT  ***
+
+
+#### Power off the robot 
+To turn off the robot, press the top button for 3 secondes until the LED becomes purple then wait a moment to let the LED becomes red then you can turn off by the power switch.
 
 
 
