@@ -150,7 +150,7 @@ To launch an existing code:
 
 
 #### Power off the robot 
-To turn off the robot, press the top button for 3 secondes until the LED becomes purple then wait a moment to let the LED becomes red then you can turn off by the power switch.
+To turn off the robot, press the top button for 3 secondes until the LED becomes purple then wait a moment until it becomes red then you can turn off by the power switch.
 
 
 
