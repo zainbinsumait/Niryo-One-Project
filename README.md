@@ -85,14 +85,36 @@ disconnected and reconnected, a calibration will be required. Chose **auto calib
 * after a succes calibration, the robot mow is ready.
 
 #### Menu  <br/> <br/>
-
 ![5](https://user-images.githubusercontent.com/76461363/145490932-dbeddba9-d75c-4457-bb79-e8ff08263183.PNG)
+
+
+#### State section and learning mode <br/> <br/>
+![7](https://user-images.githubusercontent.com/76461363/145493261-e4b2af38-b29c-4c06-becb-07b6b59f9e69.PNG)
+
+1. 3D view of the robot.<br/>
+**The 3D view can help you see if a manual or auto calibration was not done correctly. If
+there is an offset between what you see on the screen and your robot (ex: the axis 1 is clearly
+not at the same position), then you should probably do the auto-calibration again.**
+2. “Learning mode” button. <br/>
+**Activating the learning mode will deactivate the torque on all
+motors. When the robot is in “learning mode”, you can move it with your hand. When the
+“learning mode” is off, the torque is activated on all motors and you can’t move the robot with
+your hand.
+When the robot is powered on and you don’t use it, it’s better to let it in “learning mode”.
+This will avoid heat and motor problems on the long run.**
+3. “Stop” button. At any time, click on this button to stop the current robot trajectory.
+4. Current joints state (1-6).
+5. Current TCP (Tool Center Point) position and orientation.
+6. “Save current position” button. You can save the current position and give it a name, so you
+can reuse it later.
+7. Current arm max speed. You can modify it at any time (0-100%).
+8. Current selected tool.
+
 
 
 #### launch a scratch code <br/>
 To launch an existing code:
 * go to the Niryo blocks panel in the left menu.<br/> <br/>
-
 ![6](https://user-images.githubusercontent.com/76461363/145491338-f7ed2042-0932-4537-b12d-3fb3479df95d.PNG)
 
   1. This is the workspace. Your whole program will be there.
@@ -110,9 +132,21 @@ To launch an existing code:
   11.   The “Niryo One” functions.
 
 * chose the button number 10 and then chose **Import Blocks from your computer (XML)**.
-* Then chose your file and press **Open** (Sorting file holding the name "pick_n _sort_depending_on_color")
-* Run the code by pressing the button play (8).
-* ***If there's a problem, ensure that the robot choose well the large gripper. Go to robot command panel in the left menu -> tool command: choose large gripper then press SELECT  ***
+* Then chose your file and press **Open** (Sorting file holding the name "pick_n _sort_depending_on_color")<br/>
+***Important: this code uses the built and the presence sensor so make sure they are connected in this way (the built in the stepper output in the left-up and the presence sensor in the right GPIO1):***
+<br/><br/>
+![20211126_110719](https://user-images.githubusercontent.com/76461363/145494286-244e590f-7e59-4efc-8fc4-f8a213331d92.jpg)<br/>
+***make sure also that the markers in the workspace are clear to see by the robot camera***<br/><br/>
+![20211126_110644](https://user-images.githubusercontent.com/76461363/145494882-4ba2ad5e-1951-4123-82b7-40cf7142fd5b.jpg)
+
+
+* Run the code by pressing the button play (8).<br/>
+
+***If there's a problem, ensure that the robot choose well the large gripper. Go to robot command panel in the left menu -> tool command: choose large gripper then press SELECT***
+
+***In the end of this code the shapes will be sorted like this :***<br/><br/>
+![20211126_102141](https://user-images.githubusercontent.com/76461363/145495045-d8dd46ea-89c4-421e-bb1c-1ae63bb0212a.jpg)
+
 
 
 #### Power off the robot 
