@@ -94,7 +94,19 @@ To launch an existing code:
 <img src="https://user-images.githubusercontent.com/76461363/145495045-d8dd46ea-89c4-421e-bb1c-1ae63bb0212a.jpg" width="300" height="450" /><br/>
 
 
+## Codes description ##
+
+Four files XML which can be executed by using the software:
+* pick_test.xml :<br/>
+This code will just make a test to see if your robot can pick pieces or not. It will use neither the conveyor built nor the IR sensor.
+* pick_from_WS_to_convoyer.xml:<br/>
+This one will pick an object from the workspace 1 to the conveyer. It will run neither the conveyor built nor the IR sensor.
+* pick_test_with_convoyer_ws.xml :<br/>
+It will start by turn on the built and then if IR sensor detects an object, it will pick it and put it in the workspace 1. It needs all the environment setup, and you must place the workspace to close to the robot so it can see the four markers.
+* pick_n _sort_depending_on_color.xml :<br/>
+This is the finale version of the code, it picks up the object, which had been detected by the IR sensor. Then according to its color, it will place it in each of the corners of  WS1 (workspace 1).
 
 
-#### Power off the robot 
+
+## Power off the robot 
 To turn off the robot, press the top button for 3 secondes until the LED becomes purple then wait a moment until it becomes red then you can turn off by the power switch.
