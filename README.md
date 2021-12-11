@@ -19,10 +19,9 @@ The project involves exploring Niryo One 6-axis collaborative robot arm
 
 Then in a first part know how to handle it by its already built software and in a second part manipulate it by ROS.
 
+ 
 
-## Exploring the robot: 
-
-### What is Niryo ? ###
+## What is Niryo ?
 
 The French-made 6-axis collaborative robot is intended for: <br/>
 * Higher education
@@ -34,7 +33,7 @@ This robotic arm is made using 3D printing, which opens up a lot of possibilitie
 <br/><br/><br/>
 There are now two versions of Niryo :
 * Niryo One.
-* Niryo ned.
+* Niryo Ned.
 
 In this project we explore just Niryo One. If you have Niryo ned you can go to click [here](https://docs.niryo.com/product/ned/v3.2.0/en/source/introduction.html)
 <br/><br/><br/>
@@ -50,7 +49,7 @@ For all the mechanical specifications, check the pdf included which contains :
 
 For all Niryo One Documentaions you can visit their official website [here](https://niryo.com/docs/niryo-one/). 
 <br/>
-#### Two ways to program and manipulate the robot : ###
+#### Two ways to program and manipulate the robot : 
 
 **By using Niryo One Studio :**
 This software is developed by the community to make this robot accessible to students and beginners. It uses Scratch language to create some code and run it in the robot. It’s very easy to use and provide all the function that you can use to do whatever you want. To now more about this software [click here](https://github.com/zainbinsumait/Niryo-One-Project/blob/main/Niryo%20One%20Studio/README.md)
@@ -59,7 +58,7 @@ This software is developed by the community to make this robot accessible to stu
 The Robot Operating System ( [ROS](https://www.ros.org/)).  is a set of software libraries and tools that help you build robot applications. here we will not involve ROS courses, which many other websites do it well, we will just explain how to use the Niryo library in ROS, and how to run it in the robot. This will be in the second part.
 
 
-### Environment setup:
+## Environment setup:
 In order to manipulate the robot and use the vision function, we prepare this environment. 
 
 We have:
@@ -68,7 +67,7 @@ We have:
 A complete vision set and a manually built workspace that we print it let call it (WS2), you can find the 3D module in the files.<br/>
 ![vision set](https://user-images.githubusercontent.com/76461363/145681430-627d3eca-525a-42ed-9af9-7a32679f2b0a.PNG)
 
-<img src="https://user-images.githubusercontent.com/76461363/145681025-b28e4fd8-225f-4388-b18c-440b0ba2f335.jpg" width="300" height="400" />
+<img src="https://user-images.githubusercontent.com/76461363/145681029-42783b11-92fe-4fdc-885c-1c2395b309fb.jpg" width="300" height="400" />
 
 
 
@@ -77,16 +76,15 @@ This built is used to translate the pieces to the WS2, and simulate a production
 ![convoyer](https://user-images.githubusercontent.com/76461363/145681428-b4970899-bdc1-4d91-af78-405bf7feeb48.PNG)
 
 *  IR sensor to detect the presence of an object.<br/>
-![IR sensor](https://user-images.githubusercontent.com/76461363/145681054-7787e665-b5ed-481d-bdbd-69f43233892f.jpg)
+<img src="https://user-images.githubusercontent.com/76461363/145681054-7787e665-b5ed-481d-bdbd-69f43233892f.jpg" width="600" height="400" />
+
+<br/>
+
+***Ensure that the robot is stable on a flate table to avoid it's fall***<br/>
+##Now we are ready to start and learn more about the input/output of the robot##
 
 
-
-
-
-
-
-
-## User guide 
+## Turn on the robot and connect to your laptop
 
 <br/>
 
@@ -107,11 +105,13 @@ This built is used to translate the pieces to the WS2, and simulate a production
 11. Power adapter connector.<br/>
 
 
-#### Software requirement :
-* Download the software from this web site https://niryo.com/download/
 
-#### Steps to start using the Robot with the software Niryo One Studio:
+#### Steps to turn on the robot :
 * Connect the robot to a the original Power Supply (11),connect also the built if you want to use it.
+***Ensure your power adapter has an 11.1V output and is able to provide 6A. Lower output
+voltage and current may cause the robot to fail to move correctly. Higher output voltage and
+current may permanently damage the robot, and can be a cause of fire.***
+.<br/>
 * Turn on the robot by the power switch . (The LED (4) will turn into red color).<br/>
 ![Capture](https://user-images.githubusercontent.com/76461363/145487841-f7059567-52c6-4de5-a4de-7292211f7220.PNG)
 
@@ -120,88 +120,11 @@ This built is used to translate the pieces to the WS2, and simulate a production
 ![2](https://user-images.githubusercontent.com/76461363/145487833-18ed7a3e-9d85-4564-b546-11e01ab0ce62.PNG)
 
 * While the LED is blue, The robot will create its own Wi-Fi network. You can find it on your computer Wi-Fi manager. The name of the Wi-Fi network starts with “Niryo_One” followed by a series of numbers and letters, which makes a unique identifier linked to the Raspberry Pi 3B serial number. Network password is "niryone" by default
-* Once connected, you can now lauch the executable file (NiryoOneStudio) in the folder downloaded. Normally it will be in the sub-folder specifyng the number of bits of your computer.
+* Once connected, you can now start handling the robot by One of the ways that we mentionned.
+***[click here](https://github.com/zainbinsumait/Niryo-One-Project/blob/main/Niryo%20One%20Studio/README.md)for Niryo One software***
+<br/>
+***[click here](https://github.com/zainbinsumait/Niryo-One-Project/tree/main/ROS%20part/Niryo_One_Pkg)for ROS ***
 
-```bash
-cd Desktop/NiryoOneStudio-linux-x64/
-./NiryoOneStudio
-```
-Overview <br/> <br/>
-
-![4](https://user-images.githubusercontent.com/76461363/145490882-a907e2a8-97af-429b-b28a-c505c1289f08.PNG)
-
-
-* Once the software launched,on the right of the toolbar, you can see the current connection state: “Connected to” + IP
-address, or “Not connected”. Connect to the niryo. Just press the button **Connect to Niryo One**. <br/> <br/>
-![3](https://user-images.githubusercontent.com/76461363/145489367-50daf4a6-e8ba-4828-9703-54a128950074.PNG)
-
-* Calibration : After the robot has been successfully launched (LED green or blue), and before you can give a
-move command to the robot, you will need to calibrate it. Also, if a Niryo Stepper motor was
-disconnected and reconnected, a calibration will be required. Chose **auto calibration**.
-* after a succes calibration, the robot mow is ready.
-
-#### Menu  <br/> <br/>
-![5](https://user-images.githubusercontent.com/76461363/145490932-dbeddba9-d75c-4457-bb79-e8ff08263183.PNG)
-
-
-#### State section and learning mode <br/> <br/>
-![7](https://user-images.githubusercontent.com/76461363/145493261-e4b2af38-b29c-4c06-becb-07b6b59f9e69.PNG)
-
-1. 3D view of the robot.<br/>
-**The 3D view can help you see if a manual or auto calibration was not done correctly. If
-there is an offset between what you see on the screen and your robot (ex: the axis 1 is clearly
-not at the same position), then you should probably do the auto-calibration again.**
-2. “Learning mode” button. <br/>
-**Activating the learning mode will deactivate the torque on all
-motors. When the robot is in “learning mode”, you can move it with your hand. When the
-“learning mode” is off, the torque is activated on all motors and you can’t move the robot with
-your hand.
-When the robot is powered on and you don’t use it, it’s better to let it in “learning mode”.
-This will avoid heat and motor problems on the long run.**
-3. “Stop” button. At any time, click on this button to stop the current robot trajectory.
-4. Current joints state (1-6).
-5. Current TCP (Tool Center Point) position and orientation.
-6. “Save current position” button. You can save the current position and give it a name, so you
-can reuse it later.
-7. Current arm max speed. You can modify it at any time (0-100%).
-8. Current selected tool.
-
-
-
-#### launch a scratch code <br/>
-To launch an existing code:
-* go to the Niryo blocks panel in the left menu.<br/> <br/>
-![6](https://user-images.githubusercontent.com/76461363/145491338-f7ed2042-0932-4537-b12d-3fb3479df95d.PNG)
-
-  1. This is the workspace. Your whole program will be there.
-  2. Clicking on this icon will center the workspace on your blocks.
-  3. Workspace zoom control.
-  4. To delete a block, simply drag it and drop it onto the trash. You can also select it and press
-  the delete key on your keyboard.
-  5. Clear the current workspace.
-  6. Undo/Redo. You can also use CTRL + Z, and CTRL + MAJ + Z
-  7. Add a position block.
-  8. Play the sequence displayed on the workspace. Once the sequence is done (success or not),
-  you’ll get a notification on the bottom of the screen.
-  9.  Stop the current sequence execution.
-  10.   Import / Export Blocks.
-  11.   The “Niryo One” functions.
-
-* chose the button number 10 and then chose **Import Blocks from your computer (XML)**.
-* Then chose your file and press **Open** (Sorting file holding the name "pick_n _sort_depending_on_color")<br/>
-***Important: this code uses the built and the presence sensor so make sure they are connected in this way (the built in the stepper output in the left-up and the presence sensor in the right GPIO1):***
-<br/><br/>
-![20211126_110719](https://user-images.githubusercontent.com/76461363/145494286-244e590f-7e59-4efc-8fc4-f8a213331d92.jpg)<br/>
-***make sure also that the markers in the workspace are clear to see by the robot camera***<br/><br/>
-![20211126_110644](https://user-images.githubusercontent.com/76461363/145494882-4ba2ad5e-1951-4123-82b7-40cf7142fd5b.jpg)
-
-
-* Run the code by pressing the button play (8).<br/>
-
-***If there's a problem, ensure that the robot choose well the large gripper. Go to robot command panel in the left menu -> tool command: choose large gripper then press SELECT***
-
-***In the end of this code the shapes will be sorted like this :***<br/><br/>
-![20211126_102141](https://user-images.githubusercontent.com/76461363/145495045-d8dd46ea-89c4-421e-bb1c-1ae63bb0212a.jpg)
 
 
 
