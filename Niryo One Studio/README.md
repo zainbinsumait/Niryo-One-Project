@@ -1,41 +1,18 @@
-## User guide 
+# Niryo One Studio Software #
 
-<br/>
-
-![backside](https://user-images.githubusercontent.com/76461363/145484486-83e72050-7a91-4256-b6bc-1c54b14d9247.PNG "Backside")
-
-#### In order to know how to deal with the robot, it's necessary to know this buttons and I/O :
-
-1. Top button.
-2. Ethernet port of the Raspberry Pi 3B.
-3. USB port * 4.
-4. LED.
-5. CAN bus connection for Niryo Steppers * 2. Not used yet.
-6. Dynamixel XL-320 connector. Used for the vacuum pump.
-7. Dynamixel XL-430 connector. Not used yet.
-8. 12 V switch output * 2. Actionable through software.
-9. GPIO panel * 2. Total 6 digital pins, actionable through software. You can use GPIO1 and GPIO2 pins as 5V digital pins (mode: input or output, state: high or low).
-10. Power switch. 
-11. Power adapter connector.<br/>
+In this part, we will learn how to use Niryo One Studio Software and how to run the files XML. Start by downloading all the files in this repository and follow the steps bellow. The robot is supposed to be already turned on and the laptop is connected to the robot network hotspot.
 
 
-#### Software requirement :
-* Download the software from this web site https://niryo.com/download/
+## Software requirement :
+* Download the software from this [web site](https://niryo.com/download/)
 
-#### Steps to start using the Robot with the software Niryo One Studio:
-* Connect the robot to a the original Power Supply (11),connect also the built if you want to use it.
-* Turn on the robot by the power switch . (The LED (4) will turn into red color).<br/>
-![Capture](https://user-images.githubusercontent.com/76461363/145487841-f7059567-52c6-4de5-a4de-7292211f7220.PNG)
+## Steps to start using the Robot with the software Niryo One Studio:
 
+you can now lauch the executable file (NiryoOneStudio) in the folder downloaded. Normally it will be in the sub-folder specifyng the number of bits of your computer.
 
-* Wait until the LED becomes blue or green to be able to use the robot. <br/>
-![2](https://user-images.githubusercontent.com/76461363/145487833-18ed7a3e-9d85-4564-b546-11e01ab0ce62.PNG)
-
-* While the LED is blue, The robot will create its own Wi-Fi network. You can find it on your computer Wi-Fi manager. The name of the Wi-Fi network starts with “Niryo_One” followed by a series of numbers and letters, which makes a unique identifier linked to the Raspberry Pi 3B serial number. Network password is "niryone" by default
-* Once connected, you can now lauch the executable file (NiryoOneStudio) in the folder downloaded. Normally it will be in the sub-folder specifyng the number of bits of your computer.
-
+If you use Linux_x64 device you can run this command : <br/>
 ```bash
-cd Desktop/NiryoOneStudio-linux-x64/
+cd NiryoOneStudio-linux-x64/
 ./NiryoOneStudio
 ```
 Overview <br/> <br/>
@@ -85,27 +62,28 @@ To launch an existing code:
 * go to the Niryo blocks panel in the left menu.<br/> <br/>
 ![6](https://user-images.githubusercontent.com/76461363/145491338-f7ed2042-0932-4537-b12d-3fb3479df95d.PNG)
 
-  1. This is the workspace. Your whole program will be there.
-  2. Clicking on this icon will center the workspace on your blocks.
-  3. Workspace zoom control.
-  4. To delete a block, simply drag it and drop it onto the trash. You can also select it and press
+1. This is the workspace. Your whole program will be there.
+2.  Clicking on this icon will center the workspace on your blocks.
+3. Workspace zoom control.
+4. To delete a block, simply drag it and drop it onto the trash. You can also select it and press
   the delete key on your keyboard.
-  5. Clear the current workspace.
-  6. Undo/Redo. You can also use CTRL + Z, and CTRL + MAJ + Z
-  7. Add a position block.
-  8. Play the sequence displayed on the workspace. Once the sequence is done (success or not),
+5. Clear the current workspace.
+6. Undo/Redo. You can also use CTRL + Z, and CTRL + MAJ + Z
+7. Add a position block.
+8. Play the sequence displayed on the workspace. Once the sequence is done (success or not),
   you’ll get a notification on the bottom of the screen.
-  9.  Stop the current sequence execution.
-  10.   Import / Export Blocks.
-  11.   The “Niryo One” functions.
+9.  Stop the current sequence execution.
+10.   Import / Export Blocks.
+11.   The “Niryo One” functions.
 
 * chose the button number 10 and then chose **Import Blocks from your computer (XML)**.
 * Then chose your file and press **Open** (Sorting file holding the name "pick_n _sort_depending_on_color")<br/>
 ***Important: this code uses the built and the presence sensor so make sure they are connected in this way (the built in the stepper output in the left-up and the presence sensor in the right GPIO1):***
 <br/><br/>
-![20211126_110719](https://user-images.githubusercontent.com/76461363/145494286-244e590f-7e59-4efc-8fc4-f8a213331d92.jpg)<br/>
+<img src="https://user-images.githubusercontent.com/76461363/145494286-244e590f-7e59-4efc-8fc4-f8a213331d92.jpg" width="600" height="400" /><br/>
 ***make sure also that the markers in the workspace are clear to see by the robot camera***<br/><br/>
-![20211126_110644](https://user-images.githubusercontent.com/76461363/145494882-4ba2ad5e-1951-4123-82b7-40cf7142fd5b.jpg)
+<img src="https://user-images.githubusercontent.com/76461363/145494882-4ba2ad5e-1951-4123-82b7-40cf7142fd5b.jpg" width="600" height="400" /><br/>
+
 
 
 * Run the code by pressing the button play (8).<br/>
@@ -113,7 +91,8 @@ To launch an existing code:
 ***If there's a problem, ensure that the robot choose well the large gripper. Go to robot command panel in the left menu -> tool command: choose large gripper then press SELECT***
 
 ***In the end of this code the shapes will be sorted like this :***<br/><br/>
-![20211126_102141](https://user-images.githubusercontent.com/76461363/145495045-d8dd46ea-89c4-421e-bb1c-1ae63bb0212a.jpg)
+<img src="https://user-images.githubusercontent.com/76461363/145495045-d8dd46ea-89c4-421e-bb1c-1ae63bb0212a.jpg" width="300" height="450" /><br/>
+
 
 
 
