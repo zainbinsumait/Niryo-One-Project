@@ -2,12 +2,18 @@
 
 #### Projet Niryo One (ESIREM 4A program) ####
 
+## Outlines: ##
+1. Introducion 
+2. Exploring the robot
+    1. What’s is Niryo ?
+
+
 
 ## Introduction : 
 
 This project had been done during my engineering program at ESIREM ( school of materials research and engineering ) at Le Creusot campus - France. 
 
-### Objectives: 
+#### Objectives: 
 
 The project involves exploring Niryo One 6-axis collaborative robot arm 
 
@@ -16,15 +22,38 @@ Then in a first part know how to handle it by its already built software and in 
 
 ## Exploring the robot: 
 
-Niryo One robot is a collaborative and open source 6-axis robot created by Niryo society society in france for: 
+### What is Niryo ? ###
 
-* Higher education 
+The French-made 6-axis collaborative robot is intended for: <br/>
+* Higher education
+* Vocational training
+* R&D laboratories
+* small businesses.<br/>
 
-* Vocational training 
+This robotic arm is made using 3D printing, which opens up a lot of possibilities, such as making your own 3D printed tools, developing applications, connecting with a community involved in this open-source project, and even accessing a whole library of codes to customize the robotic arm to your needs and use.
+<br/><br/><br/>
+There are now two versions of Niryo :
+* Niryo One.
+* Niryo ned.
 
-* R&D laboratories 
+In this project we explore just Niryo One. If you have Niryo ned you can go to click [here](https://docs.niryo.com/product/ned/v3.2.0/en/source/introduction.html)
+<br/><br/><br/>
+For all the mechanical specifications, check the pdf included which contains :
+* Niryo One
+    * 6 axis overview
+    * Dimensions
+    * Max rotation per axis
+    * Integration
+* Tools
+    * Specs and dimensions for 5 tools
+    * Integration
 
-Its use is particularly adapted to study robotics and programming in the context of the industry 4.0.
+For all Niryo One Documentaions you can visit their official website [here](https://niryo.com/docs/niryo-one/). 
+<br/>
+#### Two ways to program and manipulate the robot : ###
+
+
+
 
 
 
