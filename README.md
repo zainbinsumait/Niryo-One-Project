@@ -70,18 +70,22 @@ A complete vision set and a manually built workspace that we print it let call i
 <img src="https://user-images.githubusercontent.com/76461363/145681029-42783b11-92fe-4fdc-885c-1c2395b309fb.jpg" width="300" height="400" />
 
 
-
 * Convoyer built (which can be also bought with the robot):
 This built is used to translate the pieces to the WS2, and simulate a production line of a company.<br/>
 ![convoyer](https://user-images.githubusercontent.com/76461363/145681428-b4970899-bdc1-4d91-af78-405bf7feeb48.PNG)
+
+
+<img src="https://user-images.githubusercontent.com/76461363/145681042-bfffe9a8-555e-49b2-b7b9-4e162e037542.jpg" width="600" height="400" />
 
 *  IR sensor to detect the presence of an object.<br/>
 <img src="https://user-images.githubusercontent.com/76461363/145681054-7787e665-b5ed-481d-bdbd-69f43233892f.jpg" width="600" height="400" />
 
 <br/>
 
+
+
 ***Ensure that the robot is stable on a flate table to avoid it's fall***<br/>
-##Now we are ready to start and learn more about the input/output of the robot##
+***Now we are ready to start and learn more about the input/output of the robot
 
 
 ## Turn on the robot and connect to your laptop
@@ -120,10 +124,16 @@ current may permanently damage the robot, and can be a cause of fire.***
 ![2](https://user-images.githubusercontent.com/76461363/145487833-18ed7a3e-9d85-4564-b546-11e01ab0ce62.PNG)
 
 * While the LED is blue, The robot will create its own Wi-Fi network. You can find it on your computer Wi-Fi manager. The name of the Wi-Fi network starts with “Niryo_One” followed by a series of numbers and letters, which makes a unique identifier linked to the Raspberry Pi 3B serial number. Network password is "niryone" by default
-* Once connected, you can now start handling the robot by One of the ways that we mentionned.
-***[click here](https://github.com/zainbinsumait/Niryo-One-Project/blob/main/Niryo%20One%20Studio/README.md)for Niryo One software***
+* If you want to use the convoyer built and the IR sensor, you have to connect them to the robot like this (in the left IR sensor and the convoyer built in the right) : <br/>
+<img src="https://user-images.githubusercontent.com/76461363/145681047-5c13443d-5d9f-496c-b78f-74a54b5eda5b.jpg" width="600" height="400" />
+* Once connected, you can now start handling the robot by One of the ways that we mentionned.<br/>
+
+
+***[click here](https://github.com/zainbinsumait/Niryo-One-Project/blob/main/Niryo%20One%20Studio/README.md) for Niryo One software***
+
 <br/>
-***[click here](https://github.com/zainbinsumait/Niryo-One-Project/tree/main/ROS%20part/Niryo_One_Pkg)for ROS ***
+
+***[click here](https://github.com/zainbinsumait/Niryo-One-Project/tree/main/ROS%20part/Niryo_One_Pkg) for ROS***
 
 
 
@@ -132,7 +142,8 @@ current may permanently damage the robot, and can be a cause of fire.***
 To turn off the robot, press the top button for 3 secondes until the LED becomes purple then wait a moment until it becomes red then you can turn off by the power switch.
 
 
+## Troubleshoting ##
 
-
+Normaly until now you will not have any problems, 
 
 
