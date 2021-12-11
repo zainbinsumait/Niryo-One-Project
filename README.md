@@ -4,20 +4,24 @@
 
 ## Outlines: ##
 1. Introducion 
-2. Exploring the robot
-    1. What’s is Niryo ?
+2. What’s is Niryo ?
+3. Environment setup
+4. How to turn on the robot and connect to your laptop
+5. Power off the robot
+6. Troubleshooting
 
 
 
 ## Introduction : 
 
-This project had been done during my engineering program at ESIREM ( school of materials research and engineering ) at Le Creusot campus - France. 
+This project had been done during my engineering program ROBOTICS AND INSTRUMENTATION at ESIREM  (school of materials research and engineering) at Le Creusot campus - France. 
 
 #### Objectives: 
 
 The project involves exploring Niryo One 6-axis collaborative robot arm 
 
-Then in a first part know how to handle it by its already built software and in a second part manipulate it by ROS.
+Then in a first part learn how to handle it by its already built software and in a second part manipulate it by ROS. In the end, write a code by both ways to make the robot pick some pieces and place them in depending in every piece color.
+
 
  
 
@@ -138,11 +142,11 @@ current may permanently damage the robot, and can be a cause of fire.***
 
 
 
-#### Power off the robot 
+## Power off the robot 
 To turn off the robot, press the top button for 3 secondes until the LED becomes purple then wait a moment until it becomes red then you can turn off by the power switch.
 
 
-## Troubleshoting ##
+## Troubleshooting ##
 
 Normaly until now you will not have any problems, 
 
