@@ -52,6 +52,33 @@ For all Niryo One Documentaions you can visit their official website [here](http
 <br/>
 #### Two ways to program and manipulate the robot : ###
 
+**By using Niryo One Studio :**
+This software is developed by the community to make this robot accessible to students and beginners. It uses Scratch language to create some code and run it in the robot. It’s very easy to use and provide all the function that you can use to do whatever you want. To now more about this software [click here](https://github.com/zainbinsumait/Niryo-One-Project/blob/main/Niryo%20One%20Studio/README.md)
+
+**By using ROS:**
+The Robot Operating System ( [ROS](https://www.ros.org/)).  is a set of software libraries and tools that help you build robot applications. here we will not involve ROS courses, which many other websites do it well, we will just explain how to use the Niryo library in ROS, and how to run it in the robot. This will be in the second part.
+
+
+### Environment setup:
+In order to manipulate the robot and use the vision function, we prepare this environment. 
+
+We have:
+* Niryo One Robot.
+* Vision set (which can be bought with the robot):
+A complete vision set and a manually built workspace that we print it let call it (WS2), you can find the 3D module in the files.<br/>
+![vision set](https://user-images.githubusercontent.com/76461363/145681430-627d3eca-525a-42ed-9af9-7a32679f2b0a.PNG)
+
+<img src="https://user-images.githubusercontent.com/76461363/145681025-b28e4fd8-225f-4388-b18c-440b0ba2f335.jpg" width="300" height="400" />
+
+
+
+* Convoyer built (which can be also bought with the robot):
+This built is used to translate the pieces to the WS2, and simulate a production line of a company.<br/>
+![convoyer](https://user-images.githubusercontent.com/76461363/145681428-b4970899-bdc1-4d91-af78-405bf7feeb48.PNG)
+
+*  IR sensor to detect the presence of an object.<br/>
+![IR sensor](https://user-images.githubusercontent.com/76461363/145681054-7787e665-b5ed-481d-bdbd-69f43233892f.jpg)
+
 
 
 
