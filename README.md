@@ -1,6 +1,24 @@
 # Niryo-One-Project #
 
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/76461363/145716076-be72cd97-9b27-4d45-893c-31a7e4c94049.png" width="300" height="100" />
+  <img src="https://user-images.githubusercontent.com/76461363/145716130-146d9742-e87a-46f6-8610-30f83d385899.jpg" width="100" height="100" />
+</p>
+
+
+![niryo](https://user-images.githubusercontent.com/76461363/145717603-98d0021c-3c6b-4b80-8de0-fb18649c1530.PNG)
+
+
 #### Projet Niryo One (ESIREM 4A program) ####
+**By the student : <br/>
+zain bin sumait** <br/>
+
+***Supervisors :***
+* Raphael DUVERNE
+* Renato MARTINS
+* Joaquin RODRIGUEZ 
+* Ralph SEULIN
+
 
 ## Outlines: ##
 1. Introducion 
@@ -149,8 +167,9 @@ The method based on landmarks that define workspaces in three dimensions to allo
 
 ***Please note that any action related to Vision will need to be done in a workspace, which means all 4 markers should be detectable by the camera***
 <br/>
-We called workspace the square represented by 4 markers as in the photo:<br/>
-<img src="https://user-images.githubusercontent.com/76461363/145681029-42783b11-92fe-4fdc-885c-1c2395b309fb.jpg" width="400" height="600" />
+We called workspace the square represented by 4 markers as in the photo:<br/><br/>
+
+<img src="https://user-images.githubusercontent.com/76461363/145681029-42783b11-92fe-4fdc-885c-1c2395b309fb.jpg" width="400" height="500" />
 
 
 So the robot has its list of workspaces registered, to register a new workspace it will be more easy to do it with Niryo One Studio, just open the Vision tab and click the button to add a new workspace. You will be guided, step by step, to set a workspace.
