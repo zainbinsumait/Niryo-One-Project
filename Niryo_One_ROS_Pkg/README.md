@@ -94,9 +94,32 @@ rosrun Niryo_One_ROS_Pkg pick_test.py
 
 This will make the robot pick one piece from the workspace 2 (manually made workspace) to the workspace 1. 
 
+## Code explanations:
+
+In the package, the three codes are:<br/>
+* pick_test_without_conveyer.py:<br/>
+This code causes the robot to go to the observation position linked to the new_workspace.  Change the name to match the name of your workspace 2 (Line 35).  Then the robot tries to detect a red square object (you can change these parameters in line 55).<br/>
+If it detects the object, it will take it and place it in the other workspace called "robotics_workspace" (this name should also be changed in line 69).  And it ends up returning to his initial position and closing the gripper.<br/>
+Ps: In the code, there are detailed comments.
+
+* pick_green_circle_with_conveyer.py:<br/>
+This code does the same as the first one except that it also uses the conveyor and the IR sensor.  So, the sensor detects the object, the conveyor stops after 3 seconds and the robot will pick up the object if it was a green circle (you can change this too). Then drop it in the other workspace and return to its initial state.
+
+* pick_n_sort_by_color_with_conveyer.py:<br/>
+This code is an update of the previous code.  It detects all types of objects and classifies them according to their colors. It repeats this 5 times.  You can change the number of repetitions as well as the position where to place each color.<br/>
+
+
 
 ## Troubleshooting ##
 
 <br/>
+When you use ROS, sometimes the code does not work.  This problem arises from the initialization of the parameters.  To avoid that, you can run the code (pick_n_place_with_conveyer) to put the robot into learning mode, and press ctrl + c to quit the program.<br/>
+You can also use this code to create a new workspace using ROS.  It asks you to position the robot in the landmarks, one after the other.  Then it turns on the conveyor and when it sees an object.  It stops the conveyor and takes the object (it must be red square) then it comes to put the object back in the same workspace.<br/>
+
+ To start this program, type this command:
+```bash
+rosrun niryo_one_python_api pick_n_place_with_conveyer.py
+```
+
 * 
 
