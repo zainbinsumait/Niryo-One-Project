@@ -100,7 +100,7 @@ Four files XML which can be executed by using the software:
 * pick_test.xml :<br/>
 This code will just make a test to see if your robot can pick pieces or not. It will use neither the conveyor built nor the IR sensor.
 ***Ensure that you modified the workspace name in the code, choose a workspace that you had already registered<br/>
-This code doesn't choose the large gripper automatically so ensure that you have selected it in robot command panel from the left menu -> tool command: choose large gripper then press SELECT ***
+This code doesn't choose the large gripper automatically so ensure that you have selected it in robot command panel from the left menu -> tool command: choose large gripper then press SELECT***
 * pick_from_WS_to_convoyer.xml:<br/>
 This one will pick an object from the workspace 1 to the conveyer. It will run neither the conveyor built nor the IR sensor.
 * pick_test_with_convoyer_ws.xml :<br/>
