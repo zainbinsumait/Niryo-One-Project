@@ -76,9 +76,20 @@ To know more about each function and how to use it, visit this [website](https:/
 ROS package contains 3 principals files: CMakeLists.txt, package.xml, these two files are created automatically while creating a package. and the third file is a python or cpp file where the code must be written. The package in this github repository has CMakeLists.txt, package.xml and three python files in the scripts folder. To use these files as a ROS package, you have to download it in catkin_ws/src/ folder. To do it follow these steps:
  ```bash
 cd catkin_ws/src/
-git clone 
+git clone https://github.com/zainbinsumait/Niryo-One-Project/tree/main/Niryo_One_ROS_Pkg
+
+```
+and Then type this command to make ROS recognize the package :
+```bash
+cd ..
+catkin_make
+cd src
+source devel/setup.bash
+```
+Then you can run this file as an example after making sure that all the environment is ready :
+
+```bash
+rosrun Niryo_One_ROS_Pkg pick_test.py
 ```
 
-
-
-
+This will make the robot pick one piece from the workspace 2 (manually made workspace) to the workspace 1. 
