@@ -70,6 +70,15 @@ There are some examples of code to execute and maybe understand what they can do
 The main file containing all the functions is located here <br/>
 \catkin_ws\src\niryo_one_ros\niryo_one_python_api\src\niryo_one_python_api <br/>
 To know more about each function and how to use it, visit this [website](https://github.com/NiryoRobotics/niryo_one_ros/tree/master/niryo_one_python_api)
- 
+
+## Download Niryo_One_pkg and run codes ##
+
+ROS package contains 3 principals files: CMakeLists.txt, package.xml, these two files are created automatically while creating a package. and the third file is a python or cpp file where the code must be written. The package in this github repository has CMakeLists.txt, package.xml and three python files in the scripts folder. To use these files as a ROS package, you have to download it in catkin_ws/src/ folder. To do it follow these steps:
+ ```bash
+cd catkin_ws/src/
+git clone 
+```
+
+
 
 
