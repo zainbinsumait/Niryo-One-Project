@@ -137,7 +137,7 @@ current may permanently damage the robot, and can be a cause of fire.***
 
 <br/>
 
-***[click here](https://github.com/zainbinsumait/Niryo-One-Project/tree/main/ROS%20part/Niryo_One_Pkg) for ROS***
+***[click here](https://github.com/zainbinsumait/Niryo-One-Project/tree/main/Niryo_One_ROS_Pkg) for ROS***
 
 
 
