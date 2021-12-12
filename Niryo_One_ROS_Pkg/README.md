@@ -93,3 +93,10 @@ rosrun Niryo_One_ROS_Pkg pick_test.py
 ```
 
 This will make the robot pick one piece from the workspace 2 (manually made workspace) to the workspace 1. 
+
+
+## Troubleshooting ##
+
+<br/>
+* 
+
