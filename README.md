@@ -7,8 +7,9 @@
 2. What’s is Niryo ?
 3. Environment setup
 4. How to turn on the robot and connect to your laptop
-5. Power off the robot
-6. Troubleshooting
+5. Workspace registration
+6. Power off the robot
+7. Troubleshooting
 
 
 
@@ -53,13 +54,15 @@ For all the mechanical specifications, check the pdf included which contains :
 
 For all Niryo One Documentaions you can visit their official website [here](https://niryo.com/docs/niryo-one/). 
 <br/>
-#### Two ways to program and manipulate the robot : 
+#### Here we will talk about two ways to  program and manipulate the robot : 
 
 **By using Niryo One Studio :**
 This software is developed by the community to make this robot accessible to students and beginners. It uses Scratch language to create some code and run it in the robot. It’s very easy to use and provide all the function that you can use to do whatever you want. To now more about this software [click here](https://github.com/zainbinsumait/Niryo-One-Project/blob/main/Niryo%20One%20Studio/README.md)
 
 **By using ROS:**
 The Robot Operating System ( [ROS](https://www.ros.org/)).  is a set of software libraries and tools that help you build robot applications. here we will not involve ROS courses, which many other websites do it well, we will just explain how to use the Niryo library in ROS, and how to run it in the robot. This will be in the second part.
+
+There are other ways also to control it like arduino, for more you can visit [ROS](https://www.ros.org/) 
 
 
 ## Environment setup:
@@ -168,6 +171,7 @@ To turn off the robot, press the top button for 3 secondes until the LED becomes
 Workspace registration could have some issues:<br/>
 * If the robot couldn't save the workspace you have to register it again and make sure that you take the good position for every landmark 
 * If the robot doesn’t reach the piece or it goes deeper than what it should be you can change that from the height parameter in the pick function (in blocks language or in Python) 
+* If the led lights up red and green alternately, there is a problem.  normally it's the conveyor connection that's messing around.  for that, disconnect the conveyor and reconnect it
 
 
 
