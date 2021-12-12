@@ -145,11 +145,15 @@ The Vision Set detects objects and calculates their positions in space using a 2
 The method based on landmarks that define workspaces in three dimensions to allow such functions using a 2D camera (the third dimension being the height, taking the height of the landmarks as origin).<br/>
 
 ***Please note that any action related to Vision will need to be done in a workspace, which means all 4 markers should be detectable by the camera***
+<br/>
 We called workspace the square represented by 4 markers as in the photo:<br/>
-<img src="https://user-images.githubusercontent.com/76461363/145681029-42783b11-92fe-4fdc-885c-1c2395b309fb.jpg" width="600" height="400" />
+<img src="https://user-images.githubusercontent.com/76461363/145681029-42783b11-92fe-4fdc-885c-1c2395b309fb.jpg" width="400" height="600" />
 
 
 So the robot has its list of workspaces registered, to register a new workspace it will be more easy to do it with Niryo One Studio, just open the Vision tab and click the button to add a new workspace. You will be guided, step by step, to set a workspace.
+
+In this project, we have used two workspaces, called "robotics_workspace and new_workspace"
+***you have to change your workspace name or the name in the code to be able to use it***.
 
 
 
@@ -161,6 +165,9 @@ To turn off the robot, press the top button for 3 secondes until the LED becomes
 
 ## Troubleshooting ##
 
-Normaly until now you will not have any problems, 
+Workspace registration could have some issues:<br/>
+* If the robot couldn't save the workspace you have to register it again and make sure that you take the good position for every landmark 
+* If the robot doesn’t reach the piece or it goes deeper than what it should be you can change that from the height parameter in the pick function (in blocks language or in Python) 
+
 
 
