@@ -77,7 +77,7 @@ try:
         #go to observation position
         n.move_pose(*observation_pose)
 
-        #initialise the parameters of finding an object
+        #initialize the parameters of finding an object
         objectred_found = False #the statu of finding a red object
         objectblue_found = False
         objectgreen_found = False
@@ -108,6 +108,8 @@ try:
 
             #Place
             place_pose = n.get_target_pose_from_rel("robotics_workspace", 0.034, 0.1, 0.5, 60)
+            #get_target_pose_from_rel(workspace, height_offset from the workspace, x_rel, y_rel, yaw_rel)
+            # (0,0) correspond to the different landmark corner of the workspace 
             place_pose_raw = n.robot_state_msg_to_list(place_pose)
             n.place_from_pose(*place_pose_raw)
 
