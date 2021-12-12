@@ -134,5 +134,4 @@ You can also use this code to create a new workspace using ROS.  It asks you to 
 rosrun niryo_one_python_api pick_n_place_with_conveyer.py
 ```
 
-* 
 
