@@ -91,6 +91,19 @@ Then you can run this file as an example after making sure that all the environm
 ```bash
 rosrun Niryo_One_ROS_Pkg pick_test.py
 ```
+**If this command doesn’t work, it’s usually due to access rights to the file, type these command:**
+```bash
+cd catkin_ws/src/Niryo_One_ROS_Pkg/ 
+ls -al
+```
+**Here the file you want to execute must appear in green<br/>
+ If not type this command:**
+```bash
+sudo chmod + x pick_test.py
+```
+ 
+
+**Therefore, you can re-type the command above**
 
 This will make the robot pick one piece from the workspace 2 (manually made workspace) to the workspace 1. 
 
